@@ -1,7 +1,7 @@
 Memobible
 =====================
 
-Une application mobile, basée sur le framework [Ionic](http://ionicframework.com) et SASS.
+Une application mobile, basée sur le framework [Ionic](http://ionicframework.com) et SASS et LocalStorage.
 
 
 ## Utilisation du projet
