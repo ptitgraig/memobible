@@ -1,0 +1,19 @@
+<ion-view title="Verset">
+  <ion-content class="has-header padding">
+    <div class="card">
+	  <div class="item item-divider">
+	    {{verse.title}}
+	  </div>
+	  <div class="item item-text-wrap">
+	    {{verse.text}}
+	  </div>
+	  <div class="item item-divider known-number" ng-show="verse.known">
+	    <i class="icon ion-heart padding" ng-repeat="i in range(verse.count) track by $index"></i>&nbsp;
+	  </div>
+	</div>
+    <div class="button-bar">
+	  <a class="button button-balanced" ng-click="markAsKnown()">Connu</a>
+	  <a class="button button-assertive" ng-click="markAsUnknown()">Pas connu</a>
+	</div>
+  </ion-content>
+</ion-view>

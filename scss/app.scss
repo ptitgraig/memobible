@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "painted_ladyregular";
+    src: url('#{$app-font-path}/painted_lady-webfont.eot');
+    src: url('#{$app-font-path}/painted_lady-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$app-font-path}/painted_lady-webfont.woff') format('woff'),
+         url('#{$app-font-path}/painted_lady-webfont.ttf') format('truetype'),
+         url('#{$app-font-path}/painted_lady-webfont.svg#painted_ladyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$class-known: "icon.known" !default;
+$color-known: #FCDFFF;
+@for $i from 1 through 4 {
+  .#{$class-known}-#{$i} {
+    color: darken($color-known, $i * 10);
+  }
+}
+.#{$class-known}-5 {
+	color: $balanced;
+}
+
+.dark-pane {
+	background: $dark;
+}
+
+.bar-dark button {
+	border:none;
+}
+
+.emphasis {
+	color:$assertive;
+}
+
+.coming-soon {
+	color:lightn($dark,40);
+}
+
+.home {
+	h1 {
+		text-transform:uppercase;
+		font-family:"painted_ladyregular";
+		color:$dark;
+	}
+	text-align:center;
+	//background:url(../img/logocoeur.png) no-repeat;
+}
+
+.known-number {
+	text-align:center;
+	color:darken($color-known, 10);
+}
+
+.memo-summary.card {
+	border:none;
+	box-shadow:none;
+	.item {
+		border:none;
+	}
+}
+
+.big-number {
+	font-family:"painted_ladyregular";
+	font-size:7em;
+	color:$stable;
+	line-height:1em;
+	&.positive {
+		color:$balanced;
+	}
+}

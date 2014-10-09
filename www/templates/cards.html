@@ -1,0 +1,35 @@
+
+<ion-view title="Cartes">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios7-paper" ng-click="changeView('app.verses')"></button>
+  </ion-nav-buttons>
+  <ion-content>
+  <div class="card">
+  <div class="item item-text-wrap">
+    This is a basic Card which contains an item that has wrapping text.
+  </div>
+</div>
+   <!-- <ion-list>
+      <ion-item ng-repeat="verse in verses" ui-sref="app.verse({verseId: verse.id})" class="item-icon-left item-icon-right">
+        <i class="icon ion-heart known-{{verse.count}}" ng-show="verse.known"></i>
+        <i class="icon ion-ios7-heart-outline" ng-hide="verse.known"></i>
+          {{verse.title}}
+        <i class="icon ion-chevron-right"></i>
+      </ion-item>
+    </ion-list>-->
+  </ion-content>
+  <!--<div class="bar bar-footer bar-balanced">
+    <div class="tabs tabs-icon-only">
+      <a class="tab-item" href="#/app/home">
+        <i class="icon ion-home"></i>
+      </a>
+      <a class="tab-item" ng-click="openModal('about')">
+        <i class="icon ion-trophy"></i>
+      </a>
+    </div>
+  </div>-->
+</ion-view>
+

@@ -1,0 +1,52 @@
+<ion-side-menus>
+
+  <ion-pane ion-side-menu-content>
+    <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+      <!--<ion-nav-back-button class="button-clear"><i class="icon ion-ios7-arrow-back"></i> Retour</ion-nav-back-button>-->
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent" animation="slide-left-right"></ion-nav-view>
+  </ion-pane>
+
+  <ion-side-menu side="left" class="dark-pane">
+
+    <div class="bar bar-header bar-dark">
+      <h1 class="title">Liste de versets</h1>
+      <button class="button" ng-click="openModal('params')">
+        <i class="icon ion-gear-a"></i>
+      </button>
+    </div>
+
+    <ion-content class="has-header">
+      <ion-list class="list-dark">
+        <ion-item nav-clear menu-close href="#/app/verses" class="item-dark item-icon-right">
+          Les indispensables
+          <span class="badge badge-calm">
+            11
+          </span>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/comingsoon/" class="item-dark item-icon-right coming-soon">
+          Les essentiels
+          <span class="item-note">
+            &Agrave; venir
+          </span>
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/comingsoon/" class="item-dark item-icon-right coming-soon">
+          Face &agrave; la tentation
+          <span class="item-note">
+            &Agrave; venir
+          </span>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+
+  </ion-side-menu>
+
+  <div class="tabs tabs-icon-only">
+    <a class="tab-item" href="#/app/home">
+      <i class="icon ion-home"></i>
+    </a>
+    <a class="tab-item" ng-click="openModal('about')">
+      <i class="icon ion-trophy"></i>
+    </a>
+  </div>
+</ion-side-menus>

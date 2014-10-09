@@ -1,0 +1,41 @@
+<ion-modal-view class="modal dark-pane" ng-controller="ParamsCtrl">
+	
+	<ion-header-bar>
+		<div class="bar bar-header bar-dark">
+			<h1 class="title">Param&egrave;tres</h1>
+			<button class="button" ng-click="closeModal('params')">
+				<i class="icon ion-close-circled"></i>
+			</button>
+		</div>
+	</ion-header-bar>
+
+	<ion-content>
+
+		<ul class="list">
+			<li>
+				<ion-toggle ng-model="cardsMode"
+			                ng-change="toggleCardsMode()"
+			                toggle-class="toggle-calm">
+			      			Activer la vision Cartes
+			    </ion-toggle>
+			</li>
+			<li class="item item-toggle">
+				Autre truc ici
+		    	<label class="toggle toggle-calm">
+					<input type="checkbox">
+					<div class="track">
+						<div class="handle"></div>
+					</div>
+				</label>
+			</li>
+		</ul>
+
+		<div class="padding">
+			<button class="button button-block button-assertive icon-right ion-refresh" ng-click="showConfirmReset()">
+				R&eacute;initialiser le compteur
+			</button>
+		</div>
+
+	</ion-content>
+
+</ion-modal-view>
